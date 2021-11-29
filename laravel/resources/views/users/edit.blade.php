@@ -37,6 +37,9 @@
                                 @if($user->avatar)
                                     <br>
                                     <img class="thumbnail img-responsive" src="{{ $user->avatar }}" width="200" />
+                                @else
+                                    <br>
+                                    <img class="thumbnail img-responsive" src="https://cdn.learnku.com/uploads/images/201709/20/1/PtDKbASVcz.png" width="200" />
                                 @endif
                             </div>
                             <textarea name="introduction" id="introduction-field" class="form-control" rows="3">{{ old('introduction', $user->introduction) }}</textarea>
