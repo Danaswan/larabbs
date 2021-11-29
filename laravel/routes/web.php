@@ -50,4 +50,4 @@ Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->na
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
 // User
-Route::resource('users', 'UserController', ['only' =>'show', 'update', 'edit']);
+Route::resource('users', 'UserController', ['only' =>['show', 'update', 'edit']]);
