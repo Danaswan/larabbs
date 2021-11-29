@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://192.168.10.10:8081/'),
+    'url' => env('APP_URL', 'http://larabbs.test/'),
 
     'asset_url' => env('ASSET_URL', null),
 

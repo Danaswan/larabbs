@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 
 route::get('/', 'PagesController@root')->name('root');
 
+route::get('phpinfo', function(){
+   return phpinfo();
+});
+
 //\Illuminate\Support\Facades\Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
